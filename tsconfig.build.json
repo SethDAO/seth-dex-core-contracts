@@ -3,11 +3,12 @@
         "target": "es5",
         "module": "commonjs",
         "strict": true,
-        "resolveJsonModule": true,
         "esModuleInterop": true,
         "moduleResolution": "node",
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "outDir": "dist/src"
     },
-    "include": ["./test", "./types"],
-    "files": ["./hardhat.config.ts"]
+    "include": ["./types"],
+    "exclude": ["./node_modules/*"]
 }
